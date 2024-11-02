@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: var(--color-font1);
+}
+
+/* Root */
+
+:root{
+    --var-padding-pixels-header: 10px 10px;
+    --colos-header: #442014;
+    --color-font1: #f1eae2 ;
+    --transition-links: .5s ease-out all;
+    --icons-header-pixels: 16px;
+    --pixels-mini-title: 7.5px;
+}
+
+
+/* Container Header */
+
+.container-fluid{
+    background: var(--colos-header);
+    padding: var(--var-padding-pixels-header);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -1;
+}
+
+.ctrl-container{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+i{
+    display: grid;
+    margin: 0 10px;
+}
+
+.content-box{
+    align-items: center;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(0, 3fr));
+}
+
+.ul-header{
+    display: grid;
+    align-items: center;
+    margin: 0;
+}
+
+.content-box :is(ul, li, a){
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-font1);
+    transition: var(--transition-links);
+    position: relative;
+    z-index: 999;
+    font-weight: 200;
+}
+.content-box a{
+    padding: 10px 5px;
+}
+.content-box .links::after{
+    content: ' ';
+    position: absolute;
+    /* background-color: rgb(19, 102, 0); */
+    inset: 0;
+    width: 0%;
+    z-index: -1;
+    transition: var(--transition-links);
+}
+.content-box .links:hover::after{
+    background-color: #ff40005e;
+    width: 100%;
+}
+.content-box .links:hover{
+    color: var(--color-font1);
+    text-decoration: none;
+}
+
+.icons-header{
+    font-size: var(--icons-header-pixels);
+}
+
+.box-center{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 5px;
+    margin: 5px 0 0 0;
+}
+.box-icons{
+    max-width: 150px;
+}
+
+.mini-title{
+    font-size: var(--pixels-mini-title);
+    height:fit-content ;
+    margin: 0;
+}
+.title{
+    margin: 0;
+    font-weight: 200;
+}
