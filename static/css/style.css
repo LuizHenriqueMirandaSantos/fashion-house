@@ -1,0 +1,67 @@
+/*--- Geral  ---*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--- Main  ---*/
+
+
+.box-float{
+    padding: 20px 10px;
+    background-color: #442014c8;
+    border: 1px solid #B77941; 
+
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    bottom: 40%;
+    text-align: center;
+
+}
+
+.box-float button{
+    background-color: #B77941;
+    padding: 6px 25px;
+    border-radius: 1vh;
+}
+
+    /*--- Cards  ---*/
+
+    .sect-cards{
+        top: 120%;
+        width: 100%;
+        position: absolute
+    }
+
+    .groupImagens{
+        background-color: #ECE5D5;
+    }
+
+
+    .cartoes{
+        background-color: transparent;
+        display: flex ;
+        flex-wrap: nowrap;
+        
+    }
+
+    .cartao{
+        background-color: #442014;
+        margin:1%; 
+        border-radius: 2%;
+    }
+
+    .espace-fotos{
+        margin: 1vh;
+        background-color:transparent;
+    }
+
+    .espace-fotos img{
+        border-radius: 10%;
+    }
+
+    .btn{
+        background-color: B77941;
+    }
