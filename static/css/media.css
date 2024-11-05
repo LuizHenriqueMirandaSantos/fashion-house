@@ -1,0 +1,24 @@
+:root{
+    --pixels-box: 250px;
+}
+
+
+@media screen {
+
+    .cartoes{
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 2 2 150px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1220px) and (min-width: 720px){
+    .cartao{
+        max-width: var(--pixels-box);
+        flex: 2 2;
+        background-color: aqua;
+    }
+}
+
