@@ -18,7 +18,6 @@
     .cartao{
         max-width: var(--pixels-box);
         flex: 2 2;
-        background-color: aqua;
     }
 }
 

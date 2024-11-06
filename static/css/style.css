@@ -20,6 +20,11 @@ body{
     --pixels-font-title-center: 4.5rem;
     --transition-default: .5s ease all;
 }
+
+.linha2{
+    background-color: #523024;
+}
+
     /*--- Cards  ---*/
 
     .sect-cards{
@@ -387,3 +392,4 @@ form[name = 'footer-form'] button:hover{
     display: flex;
     justify-content: center;
 }
+
