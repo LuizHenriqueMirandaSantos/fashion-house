@@ -134,6 +134,7 @@ main[class = 'container-fluid']{
     border-radius: 25px;
     border: none;
     margin: auto 10px;
+    margin-top: 20px;
 }
 
 .btn-center:hover{
@@ -159,10 +160,12 @@ main[class = 'container-fluid']{
 /* Coisas a Melhorar no Design */
 
 .cartoes .card:nth-child(even) .btn{
-    background-color: #fff;
+    background-color: #b5773f;
+    border-radius: 10px;
 }
 .cartoes .card:nth-child(odd) .btn{
-    background-color: #000000;
+    background-color: #b5773f;
+    border-radius: 10px;
 }
 
 
@@ -177,17 +180,18 @@ main[class = 'container-fluid']{
     display: flex;
     justify-content: center;
     color: #442014;
-    margin: 5rem 0 4rem 0;
+    margin: 0rem 0 1rem 0;
     font-size: 40px;
 }
 
 .depoimentos-cards{
-    display: grid;
-    grid-gap: 40px;
+    display: flex;
+    grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
+    
     
 
 }
@@ -198,6 +202,8 @@ main[class = 'container-fluid']{
     flex-direction: column;
     align-items: center;
     padding: 35px 40px;
+    border-radius: 10px;
+    text-align: justify;
 }
 
 
@@ -207,11 +213,177 @@ main[class = 'container-fluid']{
 
 .stars img{
     width: 20px;
+    margin-bottom: 10px;
+    
     
 }
 
 .user-img{
     width: 100px;
-    
+    border-radius: 20px ;
+    margin-bottom: 10px;
+}
+/*---------------------*/
+
+.contatenos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #543226;
 }
 
+.contatenos h2{
+    align-items: center;
+}
+
+
+/*---------------------*/
+
+/*--- footer ---*/
+
+:root{
+    --space-footer: 0 5%;
+    --color-back-footer: #111111;
+    --title-color-font-footer: #cfd0d4;
+    --font-icons-footer: 1.2rem;
+    --linear-gradient-footer-content: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(254,0,10,1) 62%, rgba(255,119,124,1) 100%);; 
+    --padding-input-footer: 15px;
+    --space-letter: 1.5px;
+    --font-size-footer: 1rem;
+}
+
+.footer {
+    color: #333;
+    text-align: center;
+    padding: var(--space-footer); 
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    font-weight: 500;
+    background-color: var(--color-back-footer);
+    color: #fff;
+    padding: 20px 5%;
+}
+
+.ctrl-container-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ctrl-container-footer label{
+    text-transform: capitalize;
+}
+
+:is(label[for='id_e_mail'], label[for='id_data_nascimento']){
+    font-size: .7rem;
+    letter-spacing: var(--space-letter);
+}
+
+form[name = 'footer-form']{
+    display: flex;
+    flex-direction: column;
+}
+
+form[name = 'footer-form'] :is(label, input){
+    display: flex;
+    margin: 10px 10px 10px 0;
+}
+
+form[name = 'footer-form'] input{
+    padding: var(--padding-input-footer);
+}
+
+#id_e_mail{
+    min-width: 300px;
+}
+
+#id_data_nascimento{
+    width: 100%;
+}
+
+.content-inputs-footer{
+    display: flex;
+}
+
+
+form[name = 'footer-form'] button{
+    padding: var(--padding-input-footer);
+    width: 100%;
+    background-color: var(--color-back-footer);
+    border: 2px solid #fff;
+    color: #fff;
+    letter-spacing: var(--space-letter);
+    cursor: pointer;
+    transition: .4s ease background;
+    margin: 15px 0;
+}
+
+form[name = 'footer-form'] button:hover{
+    background: #fff;
+    color: var(--color-back-footer);
+    font-weight: bold;
+}
+
+.text-increment{
+    display: flex;
+    max-width: 550px;
+    font-size: .7rem;
+}
+
+.boxing-icons {
+    display: flex;
+    max-width: 550px;
+    height: 60px;
+    margin: 10px 0;
+    align-items: center
+}
+
+.content-inputs-footer p:nth-last-child(odd){
+    width: 100%;
+}
+
+.boxing-icons i{
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10000px;
+    height: 65%;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #b7b7b7;
+}
+.box-footer-final{
+    width: 350px;
+    margin: 5px;
+    justify-items: baseline;
+    padding: 0 20px;
+}
+
+.box-footer-final h1{
+    font-size: var(--font-size-footer);
+    font-weight: 400 ;
+    margin: 0 0 20px 0;
+}
+
+.content-footer :is(li, a){
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 4px 0;
+    opacity: .5;
+    transition: .5s ease opacity;
+}
+
+.content-footer a:hover{
+    opacity: 1;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+}
