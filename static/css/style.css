@@ -3,10 +3,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    height: 100vh;
+    height: 100%;
+    background-color: #ECE5D5;
 }
 
 
@@ -168,10 +170,48 @@ main[class = 'container-fluid']{
 /*--- Cometarios ---*/
 
 .secao-depoimentos{
+    background-color: #ECE5D5;
+}
+
+.secao-depoimentos h1{
+    display: flex;
+    justify-content: center;
+    color: #442014;
+    margin: 5rem 0 4rem 0;
+    font-size: 40px;
+}
+
+.depoimentos-cards{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    max-width: 980px;
+    margin: 0 auto;
+    
+
+}
+
+.user{
+    background-color: #543226;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+}
+
+
+.user h3 {
+    text-align: center;
+}
+
+.stars img{
+    width: 20px;
     
 }
 
-.depoimentos-cards .user{
+.user-img{
     width: 100px;
+    
 }
 
