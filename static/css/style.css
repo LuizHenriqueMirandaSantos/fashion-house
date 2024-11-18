@@ -9,6 +9,7 @@
 body{
     height: 100%;
     background-color: #ECE5D5;
+    overflow-x: hidden; 
 }
 
 
@@ -273,6 +274,7 @@ main[class = 'container-fluid']{
 .ctrl-container-footer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .ctrl-container-footer label{
@@ -393,3 +395,22 @@ form[name = 'footer-form'] button:hover{
     justify-content: center;
 }
 
+.btn[name='Button-index']{
+    width: 120px;
+}
+
+.btn-warning{
+    border: none;
+}
+
+.space-depoimentos{
+    padding: 0 5%;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.card[name='card-depoimentos'] 
+:is(.card-title, .card-text, .text-body-secondary
+){
+    color: #000;
+}

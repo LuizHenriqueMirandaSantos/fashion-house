@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --principal-title: 4rem;
+    --var-padding-pixels-header: 10px 10px;
+    --colos-header: #442014;
+    --color-font1: #f1eae2;
+    --transition-links: .5s ease-out all;
+    --icons-header-pixels: 16px;
+    --pixels-mini-title: 7.5px;
+    --shadow-header: 0 0 10px #5d5d5d72;
+    --quiz-border-color: #007bff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-font1);
+    color: var(--colos-header);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    color: var(--colos-header);
+}
+
+.title-principal {
+    font-size: var(--principal-title);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-justify {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--colos-header) !important;
+}
+
+.tema {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: var(--var-padding-pixels-header);
+    margin: 20px auto;
+    flex-direction: row;
+}
+
+.tema:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.tema:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.quiz-box {
+    padding: 20px;
+    border: 2px solid var(--quiz-border-color);
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--shadow-header);
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+.quiz-logo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quiz-logo img {
+    width: var(--icons-header-pixels);
+    vertical-align: middle;
+}
+
+.quiz-logo a {
+    color: var(--colos-header);
+    text-decoration: none;
+    margin-left: 5px;
+    transition: var(--transition-links);
+}
+
+.quiz-logo a:hover {
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+section {
+    padding: var(--var-padding-pixels-header);
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--color-font1), #fdf8f5);
+    box-shadow: var(--shadow-header);
+}
+
+.quizurembed {
+    height: 600px !important;
+}

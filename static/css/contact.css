@@ -6,6 +6,7 @@
     --label-fontsize: 1.1rem;
     --color-btn: #774b31;
     --color-icons: #734e3d;
+    --color-font1: #f1eae2 ;
 }
 
 *{
@@ -152,4 +153,8 @@ body{
 .second-box :is(h1, sub){
     margin: 0;
     padding: 5px 0;
+}
+
+.container-contato .content-box :is(a, i, h4, sub, .mini-title), .sub-menu{
+    color: var(--color-font1);
 }
